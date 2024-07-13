@@ -19,9 +19,6 @@ elif not API_HASH:
 elif not BOT_TOKEN:
     raise SystemExit("No BOT_TOKEN found. Exiting...")
 
-if not MONGO_URL:
-    print("MONGO_URL environment variable Is Empty Bot")
-
 # Convert the LOG_GROUP_ID variable to an integer if it is not None
 if LOG_GROUP_ID:
     LOG_GROUP_ID = int(LOG_GROUP_ID)
